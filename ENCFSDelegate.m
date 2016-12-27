@@ -8,14 +8,14 @@
 
 
 #import "ENCFSDelegate.h"
-#import <MFCore/MFConstants.h>
-#import <MFCore/MGUtilities.h>
-#import <MFCore/MFError.h>
-#import <MFCore/MFNetworkFS.h>
-#import <MFCore/MFSecurity.h>
-#import <MFCore/MFLogging.h>
+#import "macfusion2/MFCore/MFConstants.h"
+#import "macfusion2/MFCore/MGUtilities.h"
+#import "macfusion2/MFCore/MFError.h"
+#import "macfusion2/MFCore/MFNetworkFS.h"
+#import "macfusion2/MFCore/MFSecurity.h"
+#import "macfusion2/MFCore/MFLogging.h"
 #import <Security/Security.h>
-#import <MFCore/MFClientFSUI.h>
+#import "macfusion2/MFCore/MFClientFSUI.h"
 #import "EncfsConfigurationController.h"
 //#import "ENCFSServerFS.h"
 
@@ -46,7 +46,7 @@ NSString *kENCFSRawPathKey = @"rawPath";
 			return nil;
 		}
 		
-		_tempMountPoint = [[NSString stringWithCString:tempNam encoding:NSUTF8StringEncoding] retain];
+		_tempMountPoint = [NSString stringWithCString:tempNam encoding:NSUTF8StringEncoding];
 		free(tempNam);
 	}
 	
@@ -224,7 +224,7 @@ NSString *kENCFSRawPathKey = @"rawPath";
 	 ofType:nil
 	 inDirectory:nil]; */
 
-    return [NSString stringWithString:@"/usr/local/bin/encfs"];
+    return @"/usr/local/bin/encfs";
     //return [NSString stringWithString:@"encfs"];
 }
 
@@ -287,7 +287,7 @@ NSString *kENCFSRawPathKey = @"rawPath";
 		NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"Decryption failed: wrong password", NSLocalizedDescriptionKey, 
 																		@"Check your settings by clicking the edit button.", NSLocalizedRecoverySuggestionErrorKey, nil];
 		NSError *error = [[NSError alloc] initWithDomain:kENCFSErrorDomain code:kENCFSErrorWrongPassword userInfo:dict];
-		return [error autorelease];
+		return error;
 	}
 	
 	s = [output rangeOfString:@"Creating new encrypted volume"];
@@ -296,7 +296,7 @@ NSString *kENCFSRawPathKey = @"rawPath";
 		NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"Decryption failed: no EncFS key file found.", NSLocalizedDescriptionKey, 
 							  suggestion, NSLocalizedRecoverySuggestionErrorKey, nil];
 		NSError *error = [[NSError alloc] initWithDomain:kENCFSErrorDomain code:kENCFSErrorNoKeyFile userInfo:dict];
-		return [error autorelease];
+		return error;
 	}
 	
 	return [NSError errorWithDomain:kENCFSErrorDomain code:kENCFSErrorUnknown userInfo:[NSDictionary dictionaryWithObjectsAndKeys:output, NSLocalizedDescriptionKey, nil]];

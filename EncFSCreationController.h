@@ -23,7 +23,7 @@
 
 }
 
-@property (retain) id representedObject;
+@property (strong) id representedObject;
 
 
 - (IBAction) browse:(id)sender;

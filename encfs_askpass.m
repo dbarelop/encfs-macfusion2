@@ -16,10 +16,10 @@
 
 
 
-#import <MFCore/MFSecurity.h>
-#import <MFCore/MFClientFS.h>
-#import <MFCore/MFLogging.h>
-#import <MFCore/MFNetworkFS.h>
+#import "macfusion2/MFCore/MFSecurity.h"
+#import "macfusion2/MFCore/MFClientFS.h"
+#import "macfusion2/MFCore/MFLogging.h"
+#import "macfusion2/MFCore/MFNetworkFS.h"
 #define self @"ENCFS_ASKPASS"
 
 int main(int argc, char *argv[])

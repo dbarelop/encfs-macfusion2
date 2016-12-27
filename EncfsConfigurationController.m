@@ -9,7 +9,7 @@
 #import "EncfsConfigurationController.h"
 #import "EncFSCreationController.h"
 #import "ENCFSErrors.h"
-#import <MFCore/MFLogging.h>
+#import "macfusion2/MFCore/MFLogging.h"
 
 @implementation EncfsConfigurationController
 

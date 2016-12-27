@@ -7,7 +7,7 @@
 //
 
 #import "EncFSCreationController.h"
-#import <MFCore/MFLogging.h>
+#import "macfusion2/MFCore/MFLogging.h"
 
 @interface EncFSCreationController ()
 - (BOOL) passwordsMatch;
@@ -19,7 +19,7 @@
 - (BOOL) pathExists;
 - (void) endModal;
 
-@property (retain) NSTask *task;
+@property (strong) NSTask *task;
 @property (copy) NSString *mountPath;
 @end
 
@@ -141,7 +141,6 @@
     if ((data = [handle availableData]) && [data length] > 0) {
         NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         MFLog(@"output: %@", string);
-        [string release];
         
         [handle readInBackgroundAndNotify];
     }
@@ -360,8 +359,6 @@
 - (void)dealloc
 {
 	[_task terminate];
-	[_task release];
-	[super dealloc];
 }
 
 @end
