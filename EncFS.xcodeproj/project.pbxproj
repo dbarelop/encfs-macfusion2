@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0617B9DD1E132A7E0048D5D1 /* MFCore in Resources */ = {isa = PBXBuildFile; fileRef = 0617B9DC1E132A5E0048D5D1 /* MFCore */; };
+		0617B9E31E13318F0048D5D1 /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0617B9E21E13318F0048D5D1 /* MFCore.framework */; };
+		0617B9E41E13318F0048D5D1 /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0617B9E21E13318F0048D5D1 /* MFCore.framework */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		F652A1F30F49B968000812BA /* ENCFSDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F652A1EE0F49B968000812BA /* ENCFSDelegate.m */; };
 		F652A1F40F49B968000812BA /* EncfsConfigurationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F652A1F00F49B968000812BA /* EncfsConfigurationController.m */; };
@@ -17,11 +19,8 @@
 		F652A1FF0F49B971000812BA /* encfs_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F652A1FA0F49B971000812BA /* encfs_icon.icns */; };
 		F652A2510F49BB10000812BA /* encfs_askpass in Resources */ = {isa = PBXBuildFile; fileRef = F652A24A0F49BAB6000812BA /* encfs_askpass */; };
 		F652A2540F49BB1D000812BA /* encfs_askpass.m in Sources */ = {isa = PBXBuildFile; fileRef = F652A1F10F49B968000812BA /* encfs_askpass.m */; };
-		F69E0E7813B1E5B300CA9231 /* MFCore.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F6CCE0B013A38D03001C9C14 /* MFCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F6BA8C510F4B58680052F0EA /* EncFSCreationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA8C500F4B58680052F0EA /* EncFSCreationController.m */; };
 		F6BA8C5A0F4B60450052F0EA /* EncFS.mfplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D5B49B6048680CD000E48DA /* EncFS.mfplugin */; };
-		F6BC915013A62E1E0055556C /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CCE0B013A38D03001C9C14 /* MFCore.framework */; };
-		F6CCE0B113A38D03001C9C14 /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CCE0B013A38D03001C9C14 /* MFCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F69E0E7813B1E5B300CA9231 /* MFCore.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		0617B9DC1E132A5E0048D5D1 /* MFCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MFCore; path = macfusion2/MFCore; sourceTree = "<group>"; };
+		0617B9E21E13318F0048D5D1 /* MFCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MFCore.framework; path = ../../Library/Frameworks/MFCore.framework; sourceTree = "<group>"; };
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -79,7 +78,6 @@
 		F6BA8BB60F4B47AA0052F0EA /* ENCFSServerFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENCFSServerFS.m; sourceTree = "<group>"; };
 		F6BA8C4F0F4B58680052F0EA /* EncFSCreationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncFSCreationController.h; sourceTree = "<group>"; };
 		F6BA8C500F4B58680052F0EA /* EncFSCreationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncFSCreationController.m; sourceTree = "<group>"; };
-		F6CCE0B013A38D03001C9C14 /* MFCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MFCore.framework; path = ../../../../../Library/Frameworks/MFCore.framework; sourceTree = "<group>"; };
 		F6F4D20A0F4EB3C300CD6AEE /* ENCFSErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENCFSErrors.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6CCE0B113A38D03001C9C14 /* MFCore.framework in Frameworks */,
+				0617B9E41E13318F0048D5D1 /* MFCore.framework in Frameworks */,
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6BC915013A62E1E0055556C /* MFCore.framework in Frameworks */,
+				0617B9E31E13318F0048D5D1 /* MFCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +117,7 @@
 		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				F6CCE0B013A38D03001C9C14 /* MFCore.framework */,
+				0617B9E21E13318F0048D5D1 /* MFCore.framework */,
 				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
 				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
 			);
@@ -323,7 +321,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = $HOME/Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					$HOME/Library/Frameworks,
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_GC = unsupported;
@@ -347,7 +348,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = $HOME/Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					$HOME/Library/Frameworks,
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -425,7 +429,10 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = $HOME/Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					$HOME/Library/Frameworks,
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_GC = unsupported;
@@ -454,7 +461,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = $HOME/Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					$HOME/Library/Frameworks,
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
