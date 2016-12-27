@@ -335,7 +335,7 @@
 				INFOPLIST_FILE = "encfs-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.t-haeberle.macfusion.encfs";
+				PRODUCT_BUNDLE_IDENTIFIER = dbarelop.macfusion.encfs;
 				PRODUCT_NAME = EncFS;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = mfplugin;
@@ -359,7 +359,7 @@
 				INFOPLIST_FILE = "encfs-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.t-haeberle.macfusion.encfs";
+				PRODUCT_BUNDLE_IDENTIFIER = dbarelop.macfusion.encfs;
 				PRODUCT_NAME = EncFS;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = mfplugin;
